@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>साई संस्कार संस्था | Sai Sanskar Sanstha</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Optional: Make carousel text look nice */
+    #heroCarousel h1, #heroCarousel h2, #heroCarousel p {
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+    /* Ensure the school name stays on top */
+    #schoolNameOverlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      z-index: 10;
+    }
+    /* Animation for school name */
+    .animate-school-name {
+      animation: zoomFade 2s ease-in-out;
+    }
+    @keyframes zoomFade {
+      0% {
+        opacity: 0;
+        transform: scale(0.7) translate(-50%, -50%);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1) translate(-50%, -50%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="assets/images/logo.jpg" alt="Sai Sanskar Sanstha Logo" width="70" height="70" class="me-2">
+      Sai Sanskar Sanstha
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section with Fixed School Name and Carousel -->
+<section id="heroCarousel" class="position-relative">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="assets/images/hero1 .jpg" class="d-block w-100" alt="Hero Image 1" style="height: 90vh; object-fit: cover;">
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="assets/images/hero2 .jpg" class="d-block w-100" alt="Hero Image 2" style="height: 90vh; object-fit: cover;">
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img src="assets/images/hero3.jpg" class="d-block w-100" alt="Hero Image 3" style="height: 90vh; object-fit: cover;">
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Fixed School Name on top -->
+  <div id="schoolNameOverlay" class="animate-school-name">
+    <h1 class="display-1 fw-bold mb-2">साई संस्कार संस्था</h1>
+    <h2 class="h3 mb-3">Sai Sanskar Sanstha</h2>
+    <p class="lead">Autism Special Child Education</p>
+    <a href="about.html" class="btn btn-primary mt-3 btn-lg">Learn More</a>
+  </div>
+</section>
+
+<!-- Founders Section -->
+<section class="py-5" style="background-color: #f9f9f9;">
+  <div class="container">
+    <h2 class="text-center mb-5">Our Founders / संस्थापक</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+      
+      <!-- Founder 1 -->
+      <div class="col">
+        <div class="card h-100 text-center shadow p-3">
+          <img src="assets/images/Mangla_Maam.jpg" class="card-img-top mx-auto mt-3" alt="मंगलाताई अशोक कदम" style="width: 200px; height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">मंगलाताई अशोक कदम</h5>
+            <p class="card-text">मा. महापौर पिंपरी चिंचवड महानगरपालिका<br>सत्तारूढ पक्षनेत्या<br>नगरसेविका</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Founder 2 -->
+      <div class="col">
+        <div class="card h-100 text-center shadow p-3">
+          <img src="assets/images/Ashok _Sir.jpg" class="card-img-top mx-auto mt-3" alt="अशोक शंकरराव कदम" style="width: 200px; height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">अशोक शंकरराव कदम</h5>
+            <p class="card-text">माजी नगरसेवक पिंपरी चिंचवड<br>स्थायी समिती अध्यक्ष, पिंपरी चिंचवड<br>अध्यक्ष, सुबोध शिक्षण संस्था</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Founder 3 -->
+      <div class="col">
+        <div class="card h-100 text-center shadow p-3">
+          <img src="assets/images/Gaurav_Sir.jpg" class="card-img-top mx-auto mt-3" alt="गौरव अशोक कदम" style="width: 200px; height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">गौरव अशोक कदम</h5>
+            <p class="card-text">संस्थापक सदस्य, साई संस्कार संस्था</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Founder 4 -->
+      <div class="col">
+        <div class="card h-100 text-center shadow p-3">
+          <img src="assets/images/Kushagar_sir.jpg" class="card-img-top mx-auto mt-3" alt="कुशाग्र अशोक कदम" style="width: 200px; height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">कुशाग्र अशोक कदम</h5>
+            <p class="card-text">संस्थापक सदस्य, साई संस्कार संस्था</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Founder 5 -->
+      <!-- <div class="col">
+        <div class="card h-100 text-center shadow p-3">
+          <img src="assets/images/Nana_sir.jpg" class="card-img-top mx-auto mt-3" alt="नाना भिकाजी भुजबळ" style="width: 200px; height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">नाना भिकाजी भुजबळ</h5>
+            <p class="card-text">अध्यक्ष, पिंपरी चिंचवड बँक<br>अध्यक्ष, वृंदावन पतसंस्था</p>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Gallery Section -->
+<section id="gallery" class="bg-light py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">Gallery / गॅलरी</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="assets/images/gallery1.jpg" class="img-fluid rounded mb-3" alt="Gallery Image 1">
+      </div>
+      <div class="col-md-4">
+        <img src="assets/images/gallery2.jpg" class="img-fluid rounded mb-3" alt="Gallery Image 2">
+      </div>
+      <div class="col-md-4">
+        <img src="assets/images/gallery3.jpg" class="img-fluid rounded mb-3" alt="Gallery Image 3">
+      </div>
+    </div>
+    <a href="gallery.html" class="btn btn-outline-primary mt-3">See Full Gallery / संपूर्ण गॅलरी पहा</a>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-body-tertiary">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Contact Us <span class="text-muted">/ संपर्क साधा</span></h2>
+      <p class="text-muted">We are here to assist you. / आम्ही तुमच्या मदतीसाठी येथे आहोत.</p>
+    </div>
+
+    <div class="row text-center g-4">
+      <!-- Address -->
+      <div class="col-md-4">
+        <div class="p-4 bg-white rounded-3 shadow border-top border-5 border-primary h-100">
+          <div class="mb-3 fs-1 text-primary">📍</div>
+          <h5 class="fw-semibold">Address / पत्ता</h5>
+          <p class="mb-1">Sai Sanskar School for Special Children</p>
+          <p class="mb-1">School No. 124, Beside Umbrella Garden, Sambhajinagar, Chinchwad, Pune – 411033</p>
+          <p class="text-muted small mb-0">साई संस्कार मतिमंद मुलांची शाळा<br>शाळा क्र. 124, अंब्रेला गार्डन शेजारी,<br>संभाजीनगर, चिंचवड, पुणे – 411033</p>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="col-md-4">
+        <div class="p-4 bg-white rounded-3 shadow border-top border-5 border-success h-100">
+          <div class="mb-3 fs-1 text-success">📧</div>
+          <h5 class="fw-semibold">Email / ईमेल</h5>
+          <p class="mb-0">
+            <a href="mailto:saisanskarsansthamr77@gmail.com" class="text-decoration-none text-dark fw-medium">
+              saisanskarsansthamr77@gmail.com
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Phone -->
+      <div class="col-md-4">
+        <div class="p-4 bg-white rounded-3 shadow border-top border-5 border-warning h-100">
+          <div class="mb-3 fs-1 text-warning">📞</div>
+          <h5 class="fw-semibold">Phone / फोन</h5>
+          <p class="mb-1">
+            <strong>School Office:</strong><br>
+            <a href="tel:+918237977999" class="text-decoration-none text-dark">+91 82379 77999</a>
+          </p>
+          <!-- <p class="mb-0">
+            <strong>Rajvardhan Kadam:</strong><br>
+            <a href="tel:+919707180707" class="text-decoration-none text-dark">+91 97071 80707</a>
+          </p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">
+    &copy; 2025 साई संस्कार संस्था | Sai Sanskar Sanstha<br>
+  </p>
+  <p>
+    Designed & Developed by  
+    <a href="https://austeresystems.com/" target="_blank" class="text-white text-decoration-underline">
+      Austere Systems
+    </a>
+  </p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

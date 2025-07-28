@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photo Gallery | Shreemant Sadguru Sai Baba Foundation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    /* Keep extra cards hidden initially */
+    .extra-card {
+      display: none;
+    }
+
+    /* Updated card styles */
+    .card {
+      border-radius: 1rem; /* Rounded corners */
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .card-img-top {
+      height: 250px; /* Fixed height */
+      object-fit: cover; /* Cover crop */
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+    }
+
+    .card-body {
+      padding: 1rem 1.25rem;
+    }
+
+    .card-body h6 {
+      margin: 0;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #333;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/images/logo.jpg" alt="Sai Sanskar Sanstha Logo" width="70" height="70" class="me-2" />
+        Sai Sanskar Sanstha
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-dark text-white text-center py-4">
+    <h1>Photo Gallery</h1>
+    <p>Activities, Art & Achievements</p>
+  </header>
+
+  <main class="container py-5">
+
+    <!-- Sports Section -->
+    <section class="mb-5">
+      <h2 class="mb-4 text-primary border-bottom pb-2">🏆 Sports / खेळ</h2>
+      <div class="row g-4" id="sports-section">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="assets/images/DSC_4442 .jpg" class="card-img-top" alt="Champion" />
+            <div class="card-body"><h6></h6></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="assets/images/DSC_4438 .jpg" class="card-img-top" alt="Champion" />
+            <div class="card-body"><h6></h6></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="assets/images/DSC_4444 .jpg" class="card-img-top" alt="Champion" />
+            <div class="card-body"><h6></h6></div>
+          </div>
+        </div>
+
+        <div class="col-md-4 extra-card sports">
+          <div class="card shadow-sm">
+            <img src="assets/images/DSC_4445 .jpg" class="card-img-top" alt="Sport 2" />
+            <div class="card-body"><h6></h6></div>
+          </div>
+        </div>
+        <div class="col-md-4 extra-card sports">
+          <div class="card shadow-sm">
+            <img src="assets/images/DSC_3696.JPG" class="card-img-top" alt="Sport 3" />
+            <div class="card-body"><h6></h6></div>
+          </div>
+        </div>
+        
+      <div class="text-center mt-3">
+        <button class="btn btn-outline-primary" aria-expanded="false" aria-controls="sports-section" data-section="sports" onclick="toggleMore(this)">
+          Show More
+        </button>
+      </div>
+    </section>
+
+    <!-- Yoga Section -->
+    <section class="mb-5">
+      <h2 class="mb-4 text-success border-bottom pb-2">🧘 Yoga / योग</h2>
+      <div class="row g-4" id="yoga-section">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="assets/images/DSC_3623 .JPG" class="card-img-top" alt="Yoga 1" />
+            <div class="card-body"><h6></h6></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="assets/images/DSC_3628 .JPG" class="card-img-top" alt="Yoga 2" />
+            <div class="card-body"><h6></h6></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="assets/images/DSC_3639 .JPG" class="card-img-top" alt="Yoga 3" />
+            <div class="card-body"><h6></h6></div>
+          </div>
+        </div>
+
+        <div class="col-md-4 extra-card yoga">
+          <div class="card shadow-sm">
+            <img src="assets/images/DSC_3645.JPG" class="card-img-top" alt="Yoga 4" />
+            <div class="card-body"><h6></h6></div>
+          </div>
+        </div>
+        <div class="col-md-4 extra-card yoga">
+          <div class="card shadow-sm">
+            <img src="assets/images/DSC_3655.JPG" class="card-img-top" alt="Yoga 5" />
+            <div class="card-body"><h6></h6></div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <button class="btn btn-outline-success" aria-expanded="false" aria-controls="yoga-section" data-section="yoga" onclick="toggleMore(this)">
+          Show More
+        </button>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="mb-5">
+      <h2 class="mb-4 text-warning border-bottom pb-2">🎉 Events / कार्यक्रम</h2>
+      <div class="row g-4" id="events-section">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="assets/images/DSC_3745.JPG" class="card-img-top" alt="Event 1" />
+            <div class="card-body"><h6></h6></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="assets/images/shared image (1).jpg" class="card-img-top" alt="Event 2" />
+            <div class="card-body"><h6></h6></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="assets/images/DSC_3694.JPG" class="card-img-top" alt="Event 3" />
+            <div class="card-body"><h6></h6></div>
+          </div>
+        </div>
+
+        <div class="col-md-4 extra-card events">
+          <div class="card shadow-sm">
+            <img src="assets/images/DSC_3696.JPG" class="card-img-top" alt="Event 4" />
+            <div class="card-body"><h6></h6></div>
+          </div>
+        </div>
+        <div class="col-md-4 extra-card events">
+          <div class="card shadow-sm">
+            <img src="assets/images/shared image.jpg" class="card-img-top" alt="Event 5" />
+            <div class="card-body"><h6></h6></div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <button class="btn btn-outline-warning" aria-expanded="false" aria-controls="events-section" data-section="events" onclick="toggleMore(this)">
+          Show More
+        </button>
+      </div>
+    </section>
+
+    <!-- Art Section -->
+    <section class="mb-5">
+      <h2 class="mb-4 text-danger border-bottom pb-2">🎨 Art / कला</h2>
+      <div class="row g-4" id="art-section">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="assets/images/DSC_3668.JPG" class="card-img-top" alt="Art 1" />
+            <div class="card-body"><h6></h6></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="assets/images/DSC_3671.JPG" class="card-img-top" alt="Art 2" />
+            <div class="card-body"><h6></h6></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <img src="assets/images/DSC_3672.JPG" class="card-img-top" alt="Art 3" />
+            <div class="card-body"><h6></h6></div>
+          </div>
+        </div>
+
+        <div class="col-md-4 extra-card art">
+          <div class="card shadow-sm">
+            <img src="assets/images/DSC_3677.JPG" class="card-img-top" alt="Art 4" />
+            <div class="card-body"><h6></h6></div>
+          </div>
+        </div>
+        <div class="col-md-4 extra-card art">
+          <div class="card shadow-sm">
+            <img src="assets/images/DSC_3745.JPG" class="card-img-top" alt="Art 5" />
+            <div class="card-body"><h6></h6></div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <button class="btn btn-outline-danger" aria-expanded="false" aria-controls="art-section" data-section="art" onclick="toggleMore(this)">
+          Show More
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">
+    &copy; 2025 साई संस्कार संस्था | Sai Sanskar Sanstha<br>
+  </p>
+  <p>
+    Designed & Developed by  
+    <a href="https://austeresystems.com/" target="_blank" class="text-white text-decoration-underline">
+      Austere Systems
+    </a>
+  </p>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleMore(button) {
+      const section = button.getAttribute("data-section");
+      const cards = document.querySelectorAll(`.extra-card.${section}`);
+      const isVisible = cards[0].style.display === "block";
+
+      cards.forEach(card => {
+        card.style.display = isVisible ? "none" : "block";
+      });
+
+      button.textContent = isVisible ? "Show More" : "Show Less";
+      button.setAttribute("aria-expanded", !isVisible);
+    }
+  </script>
+</body>
+</html>
